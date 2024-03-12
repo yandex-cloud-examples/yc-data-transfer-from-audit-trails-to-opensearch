@@ -1,5 +1,3 @@
-# Название сценария
+# Загрузка логов из Yandex Audit Trails в Yandex Managed Service for OpenSearch с помощью Yandex Data Transfer
 
-Описание сценария и инструкция по его применению.
-
-Для практических руководств обязательна ссылка на документацию.
+С помощью сервисов [Yandex Data Streams](https://cloud.yandex.ru/docs/data-streams/) и [Data Transfer](https://cloud.yandex.ru/docs/data-transfer) вы можете загружать данные из [Audit Trails](https://cloud.yandex.ru/docs/audit-trails) в кластер [Managed Service for OpenSearch](https://cloud.yandex.ru/docs/managed-opensearch) в реальном времени. Настройка через Terraform описана в [практическом руководстве](https://cloud.yandex.ru/docs/managed-opensearch/tutorials/trails-to-opensearch), необходимый для настройки конфигурационный файл [trails-to-opensearch.tf](trails-to-opensearch.tf) расположен в этом репозитории.
