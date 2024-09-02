@@ -88,7 +88,6 @@ resource "yandex_mdb_opensearch_cluster" "opensearch_cluster" {
         assign_public_ip = true
         hosts_count      = 1
         zone_ids         = ["ru-central1-a"]
-        subnet_ids       = [yandex_vpc_subnet.subnet-a.id]
         roles            = ["DATA", "MANAGER"]
         resources {
           resource_preset_id = "s2.micro"  # 2 vCPU, 8 GB RAM
@@ -104,7 +103,6 @@ resource "yandex_mdb_opensearch_cluster" "opensearch_cluster" {
         assign_public_ip = true
         hosts_count      = 1
         zone_ids         = ["ru-central1-a"]
-        subnet_ids       = [yandex_vpc_subnet.subnet-a.id]
         resources {
           resource_preset_id = "s2.micro"  # 2 vCPU, 8 GB RAM
           disk_size          = 10737418240 # Bytes
@@ -112,10 +110,6 @@ resource "yandex_mdb_opensearch_cluster" "opensearch_cluster" {
         }
       }
     }
-  }
-
-  maintenance_window {
-    type = "ANYTIME"
   }
 
   depends_on = [
