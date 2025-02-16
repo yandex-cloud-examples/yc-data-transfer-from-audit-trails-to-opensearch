@@ -1,0 +1,3 @@
+# Uploading logs from Yandex Audit Trails into Yandex Managed Service for OpenSearch through Yandex Data Transfer
+
+With [Yandex Data Streams](https://yandex.cloud/en/docs/data-streams/) and [Data Transfer](https://yandex.cloud/en/docs/data-transfer), you can upload data from [Audit Trails](https://yandex.cloud/en/docs/audit-trails) to a [Managed Service for OpenSearch](https://yandex.cloud/en/docs/managed-opensearch) cluster in real time. See [this tutorial](https://yandex.cloud/en/docs/managed-opensearch/tutorials/trails-to-opensearch) to learn how to set up the solution with Terraform. This repository contains the configuration file you will need: [trails-to-opensearch.tf](trails-to-opensearch.tf).
